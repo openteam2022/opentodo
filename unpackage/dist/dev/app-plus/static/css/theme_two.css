@@ -1,0 +1,14 @@
+:root{
+	--app-color: #FC5531;
+	--app-bg-color: #111;
+	--app-box-color: #333;
+	
+	--font-color-base: #555;
+	--font-color-shallow: #aaa;
+	--font-color-deep: #fff;
+	
+	--font-size-small: 13px;
+	--font-size-base: 15px;
+	--font-size-lg: 17px;
+	
+}

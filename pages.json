@@ -1,0 +1,137 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "uni-app",
+				"app-plus": {
+					"scrollIndicator": "none"//隐藏该页面滚动条
+				}
+			}
+		},
+		{
+		    "path" : "pages/login/login",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "",
+		        "enablePullDownRefresh": false,
+				"app-plus": {
+					"scrollIndicator":"none"
+				}
+		    }
+		    
+		},
+	    {
+            "path" : "pages/me/me",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+				"app-plus": {
+					"scrollIndicator":"none"
+				}
+            }
+            
+        }
+        ,{
+            "path" : "pages/add/add",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+				"app-plus": {
+					"scrollIndicator":"none"
+				}
+            }
+            
+        }
+        ,{
+            "path" : "pages/plan/plan",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+				"app-plus": {
+					"scrollIndicator":"none"
+				}
+            }
+            
+        },
+		{
+		    "path" : "pages/planitem/planitem",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "",
+		        "enablePullDownRefresh": false,
+				"app-plus": {
+					"scrollIndicator":"none"
+				}
+		    }
+		    
+		},
+		{
+		    "path" : "pages/login/register",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "",
+		        "enablePullDownRefresh": false,
+				"app-plus": {
+					"scrollIndicator":"none"
+				}
+		    }
+		    
+		}
+        ,{
+            "path" : "pages/history/history",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/set/set",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
+	"globalStyle": {
+		"navigationStyle": "custom",
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8",
+		"scrollIndicator":"none"
+	},
+	"uniIdRouter": {},
+	"tabBar": {
+	    "color": "#999999",
+	    "selectedColor": "#fc5531",
+	    "borderStyle": "black",
+	    "backgroundColor": "#ffffff",
+	    "list": [{
+	        "pagePath": "pages/index/index",
+	        "iconPath": "static/imgs/home.png",
+	        "selectedIconPath": "static/imgs/home_s.png",
+	        "text": "首页"
+	    },
+		{
+		    "pagePath": "pages/me/me",
+		    "iconPath": "static/imgs/me.png",
+		    "selectedIconPath": "static/imgs/me_s.png",
+		    "text": "我的"
+		}],
+		"midButton": {
+			"height": "45px",
+			"iconPath": "static/imgs/add_s.png",
+			"iconWidth": "40px",
+			"text":""
+		}
+		
+	}
+}
