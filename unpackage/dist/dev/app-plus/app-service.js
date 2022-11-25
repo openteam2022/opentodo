@@ -3055,7 +3055,7 @@ if (uni.restoreGlobal) {
     }
   });
   var Plan$1 = /* @__PURE__ */ _export_sfc(_sfc_main$d, [["__scopeId", "data-v-0fef979a"], ["__file", "E:/app/vue-app/openplanvue/components/home/plan/plan.vue"]]);
-  const HTTP_BASE_URL = "http://openitem/";
+  const HTTP_BASE_URL = "https://qiantuxinxi.cn/";
   function goReturn() {
     uni.navigateBack({
       delita: 1
@@ -4971,12 +4971,17 @@ if (uni.restoreGlobal) {
           });
         }
       });
+      uni.onNetworkStatusChange(function(res) {
+        if (res.networkType == "none") {
+          showInfo("\u7F51\u7EDC\u4E0D\u7ED9\u529B~");
+        }
+      });
     },
     onShow: function() {
-      formatAppLog("log", "at App.vue:35", "App Show");
+      formatAppLog("log", "at App.vue:40", "App Show");
     },
     onHide: function() {
-      formatAppLog("log", "at App.vue:38", "App Hide");
+      formatAppLog("log", "at App.vue:43", "App Hide");
     }
   };
   const __injectCSSVars__ = () => {

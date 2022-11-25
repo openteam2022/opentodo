@@ -50,8 +50,8 @@
 	import { reactive,ref,watch,onMounted } from 'vue'
 	import type{ Ref } from 'vue'
 	import {color} from '@/config/type.js'
-	import date from '@/utils/date.js'
-	console.log(color[0])
+	import Dates from '@/utils/date.js'
+	const date = new Dates()
 	const options:any[] = [
 		{
 		    text: '完成',

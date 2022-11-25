@@ -30,6 +30,11 @@ import { showInfo } from './utils/base';
 				}
 				
 			});
+			uni.onNetworkStatusChange(function (res) {
+				if(res.networkType == 'none'){
+					showInfo('网络不给力~')
+				}
+			});
 		},
 		onShow: function() {
 			console.log('App Show')

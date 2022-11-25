@@ -33,7 +33,8 @@
 	import { addTask } from '@/api/plan.js'
 	import { onShow,onLoad } from '@dcloudio/uni-app'
 	import { goReturn, showInfo } from '@/utils/base.js'
-	import date from '@/utils/date.js'
+	import Dates from '@/utils/date.js'
+	const date = new Dates()
 	
 	interface inputType {
 		name: string,

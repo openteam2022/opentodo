@@ -14,6 +14,11 @@ export function getPlan(data){
     return http.post('item/get',data);
 }
 
+// 获取任务历史
+export function getPlanHistory(data){
+    return http.post('item/getHistory',data);
+}
+
 // 完成任务
 export function finishPlan(data){
     return http.post('item/finish',data);

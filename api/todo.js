@@ -11,6 +11,11 @@ export function getTodoList(data){
     return http.post('todo/get',data);
 }
 
+// 获取待办历史记录
+export function getTodoHistory(data){
+    return http.post('todo/getHistory',data);
+}
+
 // 完成待办
 export function finishTodo(data){
     return http.post('todo/finish',data);

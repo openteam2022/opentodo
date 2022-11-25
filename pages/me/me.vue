@@ -36,7 +36,7 @@
 				</view>
 			</view>
 		</view>
-		<!-- <view class="list" :style="{background: state.theme.appboxcolor}">
+		<view class="list" :style="{background: state.theme.appboxcolor}">
 			<view class="list-item" @click="goHistory()">
 				<view class="item-left">
 					<text :style="{color:state.theme.fontcolordeep}">历史记录</text>
@@ -45,7 +45,7 @@
 					<uni-icons color="#ccc" type="right" size="18"></uni-icons>
 				</view>
 			</view>
-		</view> -->
+		</view>
 		<view class="list" :style="{background: state.theme.appboxcolor}">
 			<view class="list-item" @click="onChangeTheme()">
 				<view class="item-left">

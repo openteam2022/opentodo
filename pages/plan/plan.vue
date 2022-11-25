@@ -55,9 +55,9 @@
 	import { useStore } from 'vuex'
 	import { onShow,onLoad } from '@dcloudio/uni-app'
 	import { showInfo } from '@/utils/base.js'
-	import date from '@/utils/date.js'
+	import Dates from '@/utils/date.js'
 	import { finishPlanItem,removePlanItem } from '@/api/plan.js'
-	
+	const date = new Dates()
 	const { state,commit } = useStore();
 	
 	const planData:Ref<any> = ref({})

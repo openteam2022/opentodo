@@ -71,5 +71,4 @@ class Dates {
 	}
 }
 
-const date = new Dates();
-export default date;
+export default Dates;

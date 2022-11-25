@@ -79,14 +79,14 @@
 	import { ref,reactive } from 'vue'
 	import type { Ref } from 'vue'
 	import { color,type } from '@/config/type.js'
-	import date from '@/utils/date.js'
+	import Dates from '@/utils/date.js'
 	import { addTodo } from '@/api/todo.js'
 	import { addPlan } from '../../api/plan'
 	import { updateDay,updateTotal,updateTime } from '@/api/data.js'
 	import { checkNull,checkStrEngInt,checkText } from '@/utils/shield.js'
 	import { showInfo } from '../../utils/base'
 	import { getData } from '@/api/data.js'
-	
+	const date = new Dates();
 	interface inputType {
 		content?:string,
 		name?: string,
@@ -144,7 +144,6 @@
 			if(!checkNull(plan.name,'计划名不能为空'))return false;
 			if(!checkStrEngInt(plan.name,'计划名格式不正确'))return false;
 			if(!checkText(plan.other,'备注格式不正确'))return false;
-			
 			// 保存计划
 			let data = {...plan,type: planColorIndex.value,uid:state.userInfo.id,create_time:date.getTime(),end_time:`${time.value} 23:59:59`};
 			addPlan(data).then(res=>{
